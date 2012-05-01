@@ -1,0 +1,108 @@
+ICS DEVICE SOURCE FOR LG OPTIMUS ME P350 AKA PECAN
+
+HOW TO USE:
+
+Note: The source download is approximately 6GB in size. You will need 25GB free to complete a single build, and up to 80GB (or more) for a full set of builds.
+
+
+You need to have your environment configured exatly like here:
+
+http://source.android.com/source/initializing.html
+
+Next download a repo client (part "Installing Repo" of this link):
+
+http://source.android.com/source/downloading.html
+
+After this steps you have everything configured and can initialize your repository for building ICS for LG OPTIMUS ME P350
+
+First initialize ICS repository ON YOUR PC/LAPTOP 
+
+CODE:
+
+repo init -u https://android.googlesource.com/platform/manifest -b android-4.0.1_r1
+
+
+
+
+THEN sync REPO
+
+CODE:
+
+repo sync
+
+When prompted, enter your real name and email address.
+
+NOW IT WILL TAKE LONG TIME AND IF YOU HAVE SLOW NET SPEED THEN YOU NEED TO WAIT FOR VERY LONG TIME 
+
+
+Compiling: 
+
+source build/envsetup.sh
+
+IF YOU GET PROBLEM TRY THIS 
+. build/envsetup.sh
+
+IF MORE Issue: 
+
+lunch
+
+Pick your poison.
+
+Now issue: 
+
+make -j1
+
+NOW BE READY TO COMPILE ICS ROM. NOW YOU NEED TO DEVICE FOLDER TO COMPILE ICS ROM WITHOUT 
+DEVICE FOLDER YOU CAN'T DO ANYTHING 
+YOU CAN USE MY ICS DEVICE FOLDER
+
+CODE:
+
+git clone git://github.com/cipsgokhle/ICS-ANDROID-PECAN-FOLDER.git
+
+Now navigate into the folder:
+
+cd pecan
+
+Connect phone to computer and make sure USB debugging is enabled and you have adb set up.
+
+./extract-files.sh
+
+now it will get all Device Proprietary Files that needed 
+
+Navigate back to your home directory for building: 
+
+NOW WE START TO BUILD ICS:
+
+CODE:
+
+source build/envsetup.sh
+
+IF YOU GET PROBLEM TRY THIS
+
+. build/envsetup.sh
+
+Get your list of devices: 
+
+CODE:
+
+lunch
+
+Pick your poison.
+
+Now compile: 
+
+make -j1
+
+IF YOU GET PROBLEM TRY THIS 
+
+make -j1 otapackage
+
+NOW ICS WAS STARTED TO BUILD WAIT FOR SOME TIME UNTILL YOU WILL NOT GET 'Package complete'  MSG
+
+NOW ICS IS READY COPY TO YOUR PHONE SDCARD AND FLASH IT
+
+ENJOY ICS ON P350
+
+ 
+ 
