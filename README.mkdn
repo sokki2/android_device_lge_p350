@@ -1,4 +1,4 @@
-CyanogenMod for LG P350
+CyanogenMod NIGHTLY  for LG P350
 =======================
 
 How to init repository
