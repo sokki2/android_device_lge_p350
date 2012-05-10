@@ -86,27 +86,3 @@ ro.media.lprof.vid.fps=24
 # LGE_CHANGE_S, [jeongmini.park@lge.com], 2010-05-03, < Enabed EONS feature >
 persist.cust.tel.eons=1
 # LGE_CHANGE_E, [jeongmini.park@lge.com], 2010-05-03, < Enabed EONS feature >
-
-# Graphics
-view.fading_edge_length=8
-view.minimum_fling_velocity=25
-view.scroll_friction=0.008
-view.touch_slop=15
-ro.media.dec.jpeg.memcap=200000000
-ro.sf.lcd_density=120
-persist.sys.use_dithering=1
-persist.sys.purgeable_assets=1
-persist.sys.use_16bpp_alpha=1
-persist.sys.scrollingcache=3
-
-# No Autofocus device
-ro.workaround.noautofocus=1
-
-# System and Misc.
-dalvik.vm.execution-mode=int:jit
-dalvik.vm.heapsize=24m
-ro.compcache.default=26
-ro.com.google.locationfeatures=0
-ro.tether.denied=false
-sys.checkfs.fat=false
-ro.vold.umsdirtyratio=20
