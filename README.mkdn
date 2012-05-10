@@ -33,7 +33,7 @@ This step assumes you have adb installed and configured - google for it if you d
 
 Connect your device via USB and do the following commands (from the root of your CM repository):
 
-    cd device/lge/pecan
+    cd device/lge/p350
     ./extract-files.sh
     cd ../../..
 
